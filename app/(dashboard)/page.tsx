@@ -17,7 +17,7 @@ const DashboardPage = ({ searchParams }: DashboardPageParams) => {
       {!organization ? (
         <EmptyOrg />
       ) : (
-        <BoardList organizationId={organization.id} query={searchParams} />
+        <BoardList orgId={organization.id} query={searchParams} />
       )}
     </div>
   );
