@@ -18,7 +18,7 @@ interface BoardListProps {
 }
 
 export const BoardList = ({ orgId, query }: BoardListProps) => {
-  const boards = useQuery(api.boards.get, { orgId });
+  const boards = useQuery(api.boards.get, { orgId, ...query });
 
   if (boards === undefined) {
     return (
@@ -63,7 +63,7 @@ export const BoardList = ({ orgId, query }: BoardListProps) => {
             authorName={board.authorName}
             createdAt={board._creationTime}
             orgId={board.orgId}
-            isFavorite={false}
+            isFavorite={board.isFavorite}
           />
         ))}
       </div>
