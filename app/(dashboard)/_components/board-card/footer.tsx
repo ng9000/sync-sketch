@@ -9,6 +9,7 @@ interface FooterProps {
   onClick: () => void;
   disabled: boolean;
 }
+
 export const Footer = ({
   isFavorite,
   title,
