@@ -25,7 +25,7 @@ export const SearchInput = () => {
       { skipEmptyString: true, skipNull: true }
     );
     router.push(url);
-  }, [debouncedValue]);
+  }, [debouncedValue, router]);
 
   return (
     <div className="w-full relative">
