@@ -15,17 +15,17 @@ const COLORS = [
   "#DC2626",
   "#D97706",
   "#059669",
-  "#7C3AED",
+  "#7C3BED",
   "#DB2777",
   "#14B8A6",
   "#F59E0B",
-  "#EC4899",
+  "#EC9899",
   "#6366F1",
   "#F43F5E",
   "#22D3EE",
   "#84CC16",
   "#0EA5E9",
-  "#9333EA",
+  "#9331E6",
 ];
 
 export function cn(...inputs: ClassValue[]) {
